@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Elephant
+{
+    class Program
+    {
+        static void Main()
+        {
+            bool choise = false;
+            Console.WriteLine("Hi! Buy elephant!");
+            while (choise == false)
+            {
+                string answer = Console.ReadLine();
+                if (answer == "Ok" || answer == "ok")
+                {
+                    choise = true;
+                    Console.WriteLine("Just a moment.. Searching... Error. Please restart.");
+                    Console.Read();
+                }
+                else
+                {
+                    Console.WriteLine("All say *" + answer + "*, but buy!");
+                }
+            }
+        }
+    }
+}
