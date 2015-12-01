@@ -11,18 +11,18 @@ namespace Comparator
         static void Main()
         {
             double a, b, c;
-            Console.WriteLine("You need to input three decimals");
-            Console.Write("Enter first decimal : ");
+            Console.WriteLine("You need to input three numbers");
+            Console.Write("Enter first number : ");
             while (!Double.TryParse(Console.ReadLine(), out a))
             {
                 Console.Write("This is not a number, try once again : ");
             }
-            Console.Write("Enter second decimal : ");
+            Console.Write("Enter second number : ");
             while (!Double.TryParse(Console.ReadLine(), out b))
             {
                 Console.Write("This is not a number, try once again : ");
             }
-            Console.Write("Enter third decimal : ");
+            Console.Write("Enter third number : ");
             while (!Double.TryParse(Console.ReadLine(), out c))
             {
                 Console.Write("This is not a number, try once again : ");
@@ -30,7 +30,7 @@ namespace Comparator
 
             double max = Math.Max(Math.Max(a, b), c);
 
-            Console.WriteLine("Max decimal is " + max);
+            Console.WriteLine("Max number is " + max);
             Console.ReadLine();
 
         }
