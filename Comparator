@@ -15,17 +15,17 @@ namespace Comparator
             Console.Write("Enter first decimal : ");
             while (!Double.TryParse(Console.ReadLine(), out a))
             {
-                Console.WriteLine("This is not a number, try once again");
+                Console.Write("This is not a number, try once again : ");
             }
             Console.Write("Enter second decimal : ");
             while (!Double.TryParse(Console.ReadLine(), out b))
             {
-                Console.WriteLine("This is not a number, try once again");
+                Console.Write("This is not a number, try once again : ");
             }
             Console.Write("Enter third decimal : ");
             while (!Double.TryParse(Console.ReadLine(), out c))
             {
-                Console.WriteLine("This is not a number, try once again");
+                Console.Write("This is not a number, try once again : ");
             }
 
             double max = Math.Max(Math.Max(a, b), c);
