@@ -30,6 +30,7 @@ namespace Comparator
 
             double max = Math.Max(Math.Max(a, b), c);
 
+            Console.WriteLine();
             Console.WriteLine("Max number is " + max);
             Console.ReadLine();
 
